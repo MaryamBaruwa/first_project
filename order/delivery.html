@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Delivery</title>
+</head>
+<body>
+    <p><h2>For your Door-Step Delivery<img src="../images/shoes.jpg" alt=" " height="50" width="50"></h2></p><hr>
+    <form action="/your_details" method="POST">
+        <fieldset>
+            <legend> Your details</legend>
+            <ul>
+                <li><label for="name">Name<br><input type="text" placeholder="Enter your fullname" name="Name" id="name"></label></li>
+                <li><label for="email">Email address<br><input type="email" placeholder="Enter your email address" name="Email" id="email"></label></li>
+                <li><label for="telephone">Phone number<br><input type="tel" placeholder="Enter your telephone number" name="telephone" id="tel"></label></li>
+                <li><label for="sex">Sex<br><input type="radio" name="Sex" value="male" checked>Male <input type="radio" name="Sex" value="female"> Female</label></li>
+                <li><label for="home_address">Home address<br><textarea placeholder="Give details of your home address" rows="8" cols="30"></textarea></label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <form action="/specs" method="POST">
+        <fieldset>
+            <legend>Delivery Specs</legend>
+            <ul>
+                <li><label for="shoe_type">Shoe type<br><input type="radio" name="type" value="Men" checked>Men's Type <input type="radio" name="type" value="Ladies">Ladies' type</label></li>
+                <li><label for="color">Color<br><input type="radio" name="color" value="white" checked>White <input type="radio" name="color" value="black">Black <input type="radio" name="color" value="red">Red<input type="radio" name="color" value="brown">Brown<input type="radio" name="color" value="purple">Purple</label></li>
+                <li><label for="size">Shoe Size<br><input type="radio" name="size" value="small" checked>Small <input type="radio" name="size" value="medium">Medium <input type="radio" name="size" value="big">Big</label></li>
+                <li><label for="mode">Delivery mode<br><input type="radio" name="mode" value="regular">Regular mode<input type="radio" name="mode" value="vip">VIP mode <input type="radio" name="mode" value="vvip">VVIP mode</label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <form action="/payment" method="POST">
+        <fieldset>
+            <legend>Payment Instructions</legend>
+            <ul>
+                <li><label for="bank_name">Bank Name<br><select name="bank">
+                    <option>--select a bank--</option>
+                    <option>Gtbank</option>
+                    <option value="UBA">United Bank for Africa</option>
+                    <option>others</option>
+                </select></label></li>
+                <li><label for="accname">Account Name <br><input type="text" name="name" placeholder="Enter your account name" id="acc_name"></label></li>
+                <li><label for="accno">Account Number<br><input type="text" name="number" placeholder="Enter your account number" id="acc_no"></label></li>
+            </ul>
+        </fieldset>
+    </form>
+    <input type="submit" name="Submit" value="Submit">
+    <p>Copyright &copy 2020</p>
+    <p>All rights reserved</p>
+</body>
+</html>
